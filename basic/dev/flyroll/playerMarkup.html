@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="https://a-global.online/test/players/flyroll/main.css">
+<link rel="stylesheet" href="test.css">
+<meta charset="utf-8">
+<div>
+    <div style="background-color: #CCCCCC; display: flex; justify-content: space-between;">
+        <div
+            style="padding: 10px; background-color: black; margin: 10px; border-radius: 8px; z-index:1; display: flex;">
+            <div style="display: flex; align-items: center;">
+                <div class="ad_title">Реклама</div>
+                <div>
+                    <button class="nroa_button" id="nroa_button">i</button>
+                    <div class="nroa_popup">
+                        <div class="nroa_item" style="display: flex; justify-content: space-between;">
+                            <div style="margin-right: 20px;">Рекламное объявление</div>
+                            <div id="nroa_close" style="cursor: pointer;">x</div>
+                        </div>
+                        <a class="export nroa_item" id="nroa_title" target="_blank">О рекламодателе</a>
+                        <div class="nroa_item" style="display: flex; justify-content: space-between;">
+                            <div id="nroa_token" style="margin-right: 20px;">Токен</div>
+                            <div id="nroa_uri">AAaqAFTrqKaac_12fra</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ad_title ad_timer">15</div>
+            </div>
+        </div>
+
+        <div style="display: flex; justify-content: space-between;">
+            <div class="buttons">
+                <button id="volume_btn">
+                    <div id="volume_cont">
+                        <img id="volume_cont_img" width="100%" height="100%"
+                            style="background: white; border-radius: 50%;">
+                    </div>
+                </button>
+                <input type="range" step="0.01" min="0" max="1" value="0.5" id="volume" />
+            </div>
+            <div
+                style="padding: 10px; background-color: black; margin: 10px; border-radius: 8px; z-index:1; display: flex;">
+                <div style="display: flex; align-items: center;">
+                    <div class="ad_title">Пропустить</div>
+                    <div style="margin: 0 5px;"></div>
+                    <div class="ad_title ad_skiptimer">15</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="videoPlayer_a2">
+        <video id="video" src="https://storage.agency2.ru/54/54-1655388778.mp4"></video>
+    </div>
+</div>

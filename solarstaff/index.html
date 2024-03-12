@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="assets/bootstrap_5.3.0/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Solarstaff</title>
+</head>
+
+<body>
+    <div id="main_container" class="" style="padding: 10px;">
+        <form class="vh-100 gradient-custom">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                                <div class="mb-md-5 mt-md-4 pb-5">
+                                    <h2 class="fw-bold mb-2 text-uppercase">Вход</h2>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" id="typePasswordCode" class="form-control form-control-lg"
+                                            placeholder="Код ещё не отправлен" disabled />
+                                        <label class="form-label" for="typePasswordCode">Код двухфакторной авторизации</label>
+                                    </div>
+
+                                    <input id="sub_button" type="button" class="btn btn-outline-light btn-lg px-5" onclick="loginSubmit()" value="Войти"></input>
+
+                                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                                        <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                        <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                                        <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div>
+            <div class="row">
+                <div class="" style="width: 10%;">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action pointer"
+                            onclick="renderPublishersList()">Паблишеры</a>
+                        <a class="list-group-item list-group-item-action pointer"
+                            onclick="renderFreelancersList()">Фрилансеры</a>
+                        <a class="list-group-item list-group-item-action pointer"
+                            onclick="renderTasksList()">Выплаты</a>
+                    </div>
+                </div>
+
+                <div class="" style="width: 90%;">
+
+                    <div style="margin: 10px auto;">
+                        <label for="from">Дата от</label>
+                        <input type="text" id="from" name="from">
+                        <label for="to">до</label>
+                        <input type="text" id="to" name="to">
+                        <button type="button" class="btn btn-primary" onclick="dateUpate()">Обновить</button>
+                    </div>
+
+                    <table class="table table-striped" id="main_table">
+                        <thead>
+
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <script src="assets/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- <script src="assets/bootstrap_5.3.0/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

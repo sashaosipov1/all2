@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/bootstrap_5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Выплаты</title>
+</head>
+
+<body>
+    <div id="main_container" class="container col-md-12">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="list-group">
+                    <a href="index.html" class="list-group-item list-group-item-action">Паблишеры</a>
+                    <a href="" class="list-group-item list-group-item-action">Выплаты</a>
+                    <a href="#" class="list-group-item list-group-item-action">Создать бланк
+                        выплаты</a><!-- Тут сделать модалку -->
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div style="margin: 10px auto;">
+                    <label for="from">Дата от</label>
+                    <input type="text" id="from" name="from">
+                    <label for="to">до</label>
+                    <input type="text" id="to" name="to">
+                    <button type="button" class="btn btn-primary" onclick="dateUpate()">Обновить</button>
+                </div>
+
+                <table class="table table-striped" id="payments_table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Дата</th>
+                            <th scope="col">Интервал</th>
+                            <th scope="col">Количество транзакций</th>
+                            <th scope="col">Сумма транзакций</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="assets/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="payouts.js"></script>
+</body>
+
+</html>

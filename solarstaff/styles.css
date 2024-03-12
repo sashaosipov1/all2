@@ -1,0 +1,16 @@
+#main_container {
+    /* margin: 20px auto auto auto; */
+    max-width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.fade:not(.show) {
+    opacity: 1;
+}
+
+.pointer {
+    cursor: pointer;
+}

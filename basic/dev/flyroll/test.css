@@ -1,0 +1,24 @@
+#video {
+    width: 100%;
+    height: auto;
+}
+
+.nroa_button {
+    margin: 0 10px;
+}
+
+.ad_title {
+    color: white;
+}
+
+body {
+    margin: 0 !important;
+}
+
+.buttons {
+    position: unset;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}

@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+}
+
+#videoPlayer_a2_inr {
+    height: inherit;
+    width: auto;
+    position: relative;
+}
+
+#video {
+    height: 100%;
+    /* border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+.video-track {
+    margin-top: 7px;
+    height: 5px;
+    width: 100%;
+    background-color: #b6b6b6;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+
+.timeline {
+    height: 5px;
+    width: 0;
+    background: gold;
+    box-shadow: 0 -200px 100px -120px crimson inset;
+    animation: background 3s infinite alternate;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+}
+
+@keyframes background {
+    50% {
+        background: skyblue;
+        box-shadow: 0 -200px 100px -100px yellowgreen inset;
+    }
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons button {
+    background: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+#controls {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    height: 100%;
+    justify-content: space-between;
+}
+
+
+#volume {
+    display: none;
+}
+
+.container_a2 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+    position: relative;
+}
+
+.mini_btn_icon {
+    font-size: 30px;
+}
+
+#volume_cont {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+.export-cont {
+    display: none;
+    position: absolute;
+    top: 83%;
+    left: 0;
+    height: 20px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.export-cont:hover {
+    opacity: 1;
+}
+
+#export {
+    text-decoration: none;
+    color: white;
+}
+
+.ad_title {
+    font-size: 10px;
+    line-height: 10px;
+    text-align: left;
+    color: #9b9b9b;
+    font-weight: 400;
+}
+
+.nroa_button {
+    color: white;
+    border: 1px solid #9b9b9b;
+    border-radius: 50%;
+    padding: 0 4px;
+    line-height: 10px;
+    font-size: 10px;
+    margin-left: 10px;
+    background: inherit;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nroa_popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    flex-direction: column;
+    opacity: 0.85;
+}
+
+.nroa_item {
+    padding: 5px;
+}
+
+#emptyImg {
+    height: 100%;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+#skip_container {
+    cursor: pointer;
+}
